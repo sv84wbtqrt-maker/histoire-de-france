@@ -13,6 +13,9 @@ and the last 2 lesson files in `lessons/`.
 ## 2. Read the learner's progress in the Google Sheet
 Google Drive connector tools (load with ToolSearch if needed): `search_files`, `read_file_content`,
 `create_file`, `trash_file`.
+- Known ids (created by setup() on 2026-11-03): folder `1jwGGks8ccQl3OTkkS6Xgaw24-1aLYDrZ`,
+  Imports `1JPgAO29KC_JLVWX9HPEosCms56aun5V0`, Sheet `1TV7-K6vV78Y7kJgL1oAuP1FjZwYYb0SHu4LUiBq4aqg`.
+  If one of them is not found, search by name as below.
 - Find the Sheet: `search_files` with `title = 'Suivi French History Academy'`. Find the folder:
   `title = 'French History Academy' and mimeType = 'application/vnd.google-apps.folder'`, then the
   `Imports` folder inside it (`parentId = '<id>' and title = 'Imports'`).
