@@ -1,0 +1,26 @@
+{
+ "lessons": [
+  {
+   "number": 1,
+   "date": "2026-11-03",
+   "module": "P0 · The frame",
+   "title": "The map of time: the main periods of French history",
+   "minutes": 13,
+   "review": false,
+   "concepts": [
+    "periods of history",
+    "prehistory",
+    "antiquity",
+    "middle ages",
+    "early modern period",
+    "ancien régime",
+    "counting centuries",
+    "bc and ad"
+   ],
+   "request_ids": [],
+   "links": [],
+   "words": 224
+  }
+ ],
+ "latest": 1
+}

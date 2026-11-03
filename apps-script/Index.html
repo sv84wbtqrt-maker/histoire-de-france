@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en">
+<head>
+<base target="_top">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>French History Academy</title>
+<style>
+:root {
+  --bg: #f6f4ef; --card: #ffffff; --ink: #1f2328; --muted: #6a6f76; --line: #e3ded3;
+  --accent: #1d4fa3; --accent-ink: #ffffff; --ok: #1f7a4d; --ok-bg: #e6f4ec; --warn: #9a6200; --warn-bg: #fdf2dc;
+  --paper: #fffdf6; --rule: #dfe8f3; --margin: #f0b8b8;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #15171a; --card: #1e2125; --ink: #e8e6e3; --muted: #9aa0a6; --line: #30343a;
+    --accent: #7fa8ff; --accent-ink: #15171a; --ok: #5fd39a; --ok-bg: #173226; --warn: #f3c062; --warn-bg: #3a2f17;
+    --paper: #202327; --rule: #2a3340; --margin: #5a2b2b;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #15171a; --card: #1e2125; --ink: #e8e6e3; --muted: #9aa0a6; --line: #30343a;
+  --accent: #7fa8ff; --accent-ink: #15171a; --ok: #5fd39a; --ok-bg: #173226; --warn: #f3c062; --warn-bg: #3a2f17;
+  --paper: #202327; --rule: #2a3340; --margin: #5a2b2b;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+a { color: var(--accent); }
+.top { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; justify-content: space-between; padding: 12px 16px; border-bottom: 1px solid var(--line); background: var(--card); position: sticky; top: 0; z-index: 2; }
+.brand { font-weight: 700; color: var(--ink); text-decoration: none; letter-spacing: .2px; }
+nav { display: flex; gap: 4px; flex-wrap: wrap; }
+nav a { color: var(--muted); text-decoration: none; padding: 4px 10px; border-radius: 999px; font-size: 15px; }
+nav a.active { background: var(--ink); color: var(--bg); }
+.progressbar { position: relative; height: 22px; background: var(--line); }
+.progressbar > div { height: 100%; background: var(--ok); opacity: .35; width: 0; transition: width .4s; }
+.progressbar span { position: absolute; inset: 0; font-size: 12px; display: flex; align-items: center; justify-content: center; color: var(--ink); }
+main { max-width: 760px; margin: 0 auto; padding: 20px 16px 80px; }
+.muted { color: var(--muted); }
+.meta { color: var(--muted); font-size: 14px; display: flex; flex-wrap: wrap; gap: 4px 12px; }
+h1 { font-size: 1.6rem; line-height: 1.25; margin: 6px 0 12px; }
+h2 { font-size: 1.1rem; margin: 28px 0 8px; }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 16px; margin: 16px 0; }
+.story { font-size: 16px; border-left: 3px solid var(--line); padding: 2px 0 2px 14px; color: var(--ink); }
+.label { display: inline-block; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .6px; color: var(--muted); margin-bottom: 6px; }
+.label.write { color: var(--accent); }
+.paper { background: var(--paper); border: 1px solid var(--line); border-radius: 12px; padding: 18px 18px 18px 30px; margin: 16px 0;
+  background-image: linear-gradient(to right, transparent 18px, var(--margin) 18px, var(--margin) 19.5px, transparent 19.5px),
+    repeating-linear-gradient(to bottom, transparent 0, transparent 27px, var(--rule) 27px, var(--rule) 28px);
+  line-height: 28px; font-size: 17px; }
+.paper h3 { font-size: 1rem; margin: 14px 0 0; line-height: 28px; }
+.paper p, .paper ul, .paper ol { margin: 0 0 4px; }
+.paper ul, .paper ol { padding-left: 22px; }
+.paper .objective { font-style: italic; }
+.lref { white-space: nowrap; font-weight: 600; text-decoration: none; }
+table { border-collapse: collapse; margin: 6px 0; font-size: 15px; width: 100%; display: block; overflow-x: auto; }
+th, td { border: 1px solid var(--line); padding: 2px 8px; text-align: left; line-height: 1.5; }
+.q { margin: 10px 0; }
+.q .a { display: none; margin-top: 4px; padding: 8px 10px; background: var(--ok-bg); border-radius: 8px; font-size: 15px; line-height: 1.5; }
+.q.open .a { display: block; }
+button, .btn { font: inherit; font-size: 15px; border-radius: 10px; border: 1px solid var(--line); background: var(--card); color: var(--ink); padding: 8px 14px; cursor: pointer; }
+button.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); font-weight: 600; }
+button.ok { background: var(--ok); color: var(--card); border-color: var(--ok); }
+button.chip { border-radius: 999px; padding: 4px 12px; font-size: 14px; }
+button.chip.on { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+button:disabled { opacity: .5; cursor: default; }
+.row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 8px 0; }
+.status { padding: 10px 12px; border-radius: 10px; font-size: 15px; }
+.status.ok { background: var(--ok-bg); color: var(--ok); }
+.status.warn { background: var(--warn-bg); color: var(--warn); }
+textarea, input { font: inherit; width: 100%; border: 1px solid var(--line); border-radius: 10px; padding: 10px; background: var(--card); color: var(--ink); }
+textarea { min-height: 100px; }
+.list { list-style: none; padding: 0; margin: 0; }
+.list li { display: flex; gap: 10px; align-items: baseline; padding: 10px 0; border-bottom: 1px solid var(--line); }
+.list .num { color: var(--muted); font-variant-numeric: tabular-nums; min-width: 2.5em; }
+.list a { color: var(--ink); text-decoration: none; flex: 1; }
+.badge { font-size: 12px; border-radius: 999px; padding: 1px 8px; white-space: nowrap; }
+.badge.ok { background: var(--ok-bg); color: var(--ok); }
+.badge.todo { background: var(--warn-bg); color: var(--warn); }
+.module-title { margin: 22px 0 4px; font-size: 14px; color: var(--muted); text-transform: uppercase; letter-spacing: .5px; }
+.pager { display: flex; justify-content: space-between; margin-top: 24px; }
+#toast { position: fixed; left: 50%; bottom: 20px; transform: translateX(-50%); background: var(--ink); color: var(--bg); padding: 10px 16px; border-radius: 10px; font-size: 15px; opacity: 0; transition: opacity .3s; pointer-events: none; max-width: calc(100% - 32px); }
+#toast.show { opacity: 1; }
+@media print {
+  .top, .progressbar, .actions, .pager, #toast, .no-print { display: none !important; }
+  body { background: #fff; }
+  .paper { background: none; border: none; padding: 0; }
+  .q .a { display: none !important; }
+}
+</style>
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="#/">French History Academy</a>
+  <nav>
+    <a href="#/" data-nav="today">Today</a>
+    <a href="#/archive" data-nav="archive">Archive</a>
+    <a href="#/ask" data-nav="ask">Ask</a>
+    <a href="#/settings" data-nav="settings">Settings</a>
+  </nav>
+</header>
+<div class="progressbar" id="progressbar" hidden><div id="progressfill"></div><span id="progresstext"></span></div>
+<main id="app"><p class="muted">Loading…</p></main>
+<div id="toast" role="status" aria-live="polite"></div>
+<script>
+/* French History Academy web page, served by Apps Script. Data and buttons go through google.script.run. */
+(function () {
+  'use strict';
+  var S = { index: { lessons: [], latest: 0 }, progress: { lessons: {}, requests: [] }, cache: {} };
+  var app = document.getElementById('app');
+
+  // ---------- storage (per device, never required) ----------
+  function getLocal(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
+  function setLocal(k, v) { try { localStorage.setItem(k, v); } catch (e) { /* private mode */ } }
+  function delLocal(k) { try { localStorage.removeItem(k); } catch (e) { /* ignore */ } }
+
+  // ---------- helpers ----------
+  function esc(s) {
+    return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+    });
+  }
+  function inline(s) {
+    return esc(s)
+      .replace(/`([^`]+)`/g, '<code>$1</code>')
+      .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+      .replace(/(^|[^*])\*([^*\s][^*]*)\*/g, '$1<em>$2</em>')
+      .replace(/\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>')
+      .replace(/→\s*L(\d+)/g, '<a class="lref" href="#/lesson/$1">→ L$1</a>');
+  }
+  /** Minimal Markdown: paragraphs, - and 1. lists, | tables |, **bold**, *italic*, links. */
+  function md(text) {
+    var lines = String(text || '').split('\n'), out = [], i = 0;
+    while (i < lines.length) {
+      var l = lines[i];
+      if (!l.trim()) { i++; continue; }
+      if (/^\s*\|/.test(l)) {
+        var rows = [];
+        while (i < lines.length && /^\s*\|/.test(lines[i])) { rows.push(lines[i]); i++; }
+        var body = rows.map(function (r) { return r.trim().replace(/^\||\|$/g, '').split('|').map(function (c) { return c.trim(); }); })
+          .filter(function (c) { return !c.every(function (x) { return /^:?-+:?$/.test(x); }); });
+        var h = '<table><thead><tr>' + body[0].map(function (c) { return '<th>' + inline(c) + '</th>'; }).join('') + '</tr></thead><tbody>';
+        body.slice(1).forEach(function (r) { h += '<tr>' + r.map(function (c) { return '<td>' + inline(c) + '</td>'; }).join('') + '</tr>'; });
+        out.push(h + '</tbody></table>');
+        continue;
+      }
+      var m = /^\s*(-|\*|\d+\.)\s+/.exec(l);
+      if (m) {
+        var ordered = /\d/.test(m[1]), items = [];
+        while (i < lines.length && /^\s*(-|\*|\d+\.)\s+/.test(lines[i])) { items.push(lines[i].replace(/^\s*(-|\*|\d+\.)\s+/, '')); i++; }
+        var tag = ordered ? 'ol' : 'ul';
+        out.push('<' + tag + '>' + items.map(function (x) { return '<li>' + inline(x) + '</li>'; }).join('') + '</' + tag + '>');
+        continue;
+      }
+      var para = [];
+      while (i < lines.length && lines[i].trim() && !/^\s*(\||-\s|\*\s|\d+\.\s)/.test(lines[i])) { para.push(lines[i]); i++; }
+      out.push('<p>' + inline(para.join(' ')) + '</p>');
+    }
+    return out.join('');
+  }
+  function fmtDate(iso) {
+    try { return new Date(iso + 'T12:00:00').toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' }); }
+    catch (e) { return iso; }
+  }
+  function toast(msg) {
+    var t = document.getElementById('toast');
+    t.textContent = msg; t.classList.add('show');
+    clearTimeout(toast._t); toast._t = setTimeout(function () { t.classList.remove('show'); }, 3200);
+  }
+  function lessonStatus(n) {
+    var e = S.progress.lessons && S.progress.lessons[String(n)];
+    return (e && e.status) || 'not_written';
+  }
+  function lessonEntry(n) { return (S.progress.lessons && S.progress.lessons[String(n)]) || {}; }
+
+  // ---------- backend (Apps Script) ----------
+  function call(fn) {
+    var args = Array.prototype.slice.call(arguments, 1);
+    return new Promise(function (resolve, reject) {
+      google.script.run.withSuccessHandler(resolve).withFailureHandler(reject)[fn].apply(null, args);
+    });
+  }
+  function setData(d) {
+    S.index = { lessons: d.lessons, latest: d.lessons.length ? d.lessons[d.lessons.length - 1].number : 0 };
+    S.cache = {};
+    d.lessons.forEach(function (l) { S.cache[l.number] = l; });
+    S.progress = { lessons: d.progress || {}, requests: d.requests || [] };
+    updateProgressBar();
+  }
+  function post(fn) {
+    var args = Array.prototype.slice.call(arguments);
+    return call.apply(null, args).then(setData).catch(function (e) { toast('Error: ' + (e && e.message || e)); throw e; });
+  }
+
+  // ---------- views ----------
+  function setNav(name) {
+    document.querySelectorAll('nav a').forEach(function (a) { a.classList.toggle('active', a.getAttribute('data-nav') === name); });
+  }
+  function updateProgressBar() {
+    var total = S.index.lessons.length, done = S.index.lessons.filter(function (l) { return lessonStatus(l.number) === 'written'; }).length;
+    var bar = document.getElementById('progressbar');
+    if (!total) { bar.hidden = true; return; }
+    bar.hidden = false;
+    var roadmap = 196;
+    document.getElementById('progressfill').style.width = Math.min(100, done / roadmap * 100) + '%';
+    document.getElementById('progresstext').textContent = done + ' lesson' + (done === 1 ? '' : 's') + ' written · core roadmap: ' + roadmap;
+  }
+
+  function loadLesson(n) {
+    return S.cache[n] ? Promise.resolve(S.cache[n]) : Promise.reject(new Error('Lesson ' + n + ' not found'));
+  }
+
+  function renderLesson(n) {
+    setNav(n === S.index.latest ? 'today' : 'archive');
+    return loadLesson(n).then(function (l) {
+      var latest = n === S.index.latest;
+      var h = '';
+      h += '<div class="meta"><span>Lesson ' + l.number + '</span><span>' + esc(fmtDate(l.date)) + '</span><span>' + esc(l.module) + '</span><span>≈ ' + l.minutes + ' min of writing</span></div>';
+      h += '<h1>' + esc(l.title) + (l.review ? ' <span class="badge todo">review</span>' : '') + '</h1>';
+      h += '<div class="label">Read, don\'t copy</div><div class="story">' + md(l.story) + '</div>';
+      h += '<div class="paper"><div class="label write">✍️ Copy into your workbook</div>';
+      h += '<p><strong>L' + l.number + ' · ' + esc(l.date) + ' · ' + esc(l.title) + '</strong></p>';
+      h += '<p class="objective">' + inline(l.objective) + '</p>';
+      l.write.forEach(function (s) { h += '<h3>' + inline(s.heading) + '</h3>' + md(s.body); });
+      h += '<h3>Check yourself (copy the questions, answer from memory)</h3>';
+      l.check.forEach(function (c, i) {
+        h += '<div class="q" id="q' + i + '"><div>' + (i + 1) + '. ' + inline(c.q) + '</div><button class="chip no-print" data-reveal="' + i + '">Show answer</button><div class="a">' + md(c.a) + '</div></div>';
+      });
+      h += '</div>';
+      if (l.read_more) h += '<div class="card"><div class="label">Going further (read only)</div>' + md(l.read_more) + '</div>';
+      var later = S.index.lessons.filter(function (x) { return (x.links || []).some(function (k) { return k.lesson === l.number; }); });
+      if ((l.links || []).length || later.length) {
+        h += '<div class="card"><div class="label">Connections between lessons</div>';
+        if ((l.links || []).length) h += '<p><strong>Builds on:</strong></p><ul>' + l.links.map(function (k) {
+          var t = S.cache[k.lesson] ? ' ' + esc(S.cache[k.lesson].title) : '';
+          return '<li><a href="#/lesson/' + k.lesson + '">L' + k.lesson + t + '</a>: ' + inline(k.why) + '</li>';
+        }).join('') + '</ul>';
+        if (later.length) h += '<p><strong>Used again in:</strong> ' + later.map(function (x) {
+          return '<a href="#/lesson/' + x.number + '">L' + x.number + '</a>';
+        }).join(' · ') + '</p>';
+        h += '</div>';
+      }
+      h += '<p class="muted"><strong>Next:</strong> ' + inline(l.next) + '</p>';
+      h += actions(l, latest);
+      h += '<div class="pager">' + (n > 1 ? '<a href="#/lesson/' + (n - 1) + '">← Lesson ' + (n - 1) + '</a>' : '<span></span>') +
+        (n < S.index.latest ? '<a href="#/lesson/' + (n + 1) + '">Lesson ' + (n + 1) + ' →</a>' : '<span></span>') + '</div>';
+      app.innerHTML = h;
+      bindLesson(l);
+      window.scrollTo(0, 0);
+    });
+  }
+
+  function actions(l, latest) {
+    var st = lessonStatus(l.number), fb = lessonEntry(l.number).feedback || {};
+    var h = '<section class="card actions"><div class="label">Your progress</div>';
+    if (st === 'written') {
+      h += '<div class="status ok">✓ Written. ' + (latest ? 'Your next lesson arrives tomorrow morning.' : '') + '</div>';
+      h += '<div class="row"><button data-status="not_written">Undo: I haven\'t written it</button></div>';
+    } else {
+      h += '<div class="status warn">' + (latest ? 'Not written yet. The next lesson is published only after you mark this one as written: take your time.' : 'Not marked as written.') + '</div>';
+      h += '<div class="row"><button class="primary" data-status="written">✓ I have written this lesson</button></div>';
+    }
+    h += '<div class="row"><span class="muted">Difficulty:</span>' +
+      chip('difficulty', 'too_easy', 'Too easy', fb) + chip('difficulty', 'right', 'Just right', fb) + chip('difficulty', 'too_hard', 'Too hard', fb) + '</div>';
+    h += '<div class="row"><span class="muted">Length:</span>' +
+      chip('length', 'too_short', 'Too short', fb) + chip('length', 'right', 'Just right', fb) + chip('length', 'too_long', 'Too long', fb) + '</div>';
+    h += '<div class="row" style="margin-top:14px"><a class="btn" href="#/ask?lesson=' + l.number + '">Ask the teacher about this lesson</a></div>';
+    return h + '</section>';
+  }
+  function chip(kind, value, label, fb) {
+    return '<button class="chip' + (fb[kind] === value ? ' on' : '') + '" data-fb="' + kind + '" data-val="' + value + '">' + label + '</button>';
+  }
+
+  function bindLesson(l) {
+    app.querySelectorAll('[data-reveal]').forEach(function (b) {
+      b.addEventListener('click', function () {
+        var q = document.getElementById('q' + b.getAttribute('data-reveal'));
+        q.classList.toggle('open'); b.textContent = q.classList.contains('open') ? 'Hide answer' : 'Show answer';
+      });
+    });
+    app.querySelectorAll('[data-status]').forEach(function (b) {
+      b.addEventListener('click', function () {
+        var status = b.getAttribute('data-status');
+        b.disabled = true;
+        post('setStatus', l.number, status).then(function () {
+          toast(status === 'written' ? 'Well done! Saved.' : 'Saved.');
+          updateProgressBar(); renderLesson(l.number);
+        }).catch(function () { b.disabled = false; });
+      });
+    });
+    app.querySelectorAll('[data-fb]').forEach(function (b) {
+      b.addEventListener('click', function () {
+        b.disabled = true;
+        post('setFeedback', l.number, b.getAttribute('data-fb'), b.getAttribute('data-val')).then(function () { toast('Thanks, the teacher will adapt.'); renderLesson(l.number); })
+          .catch(function () { b.disabled = false; });
+      });
+    });
+  }
+
+  function renderArchive() {
+    setNav('archive');
+    var h = '<h1>All lessons</h1>', module = null;
+    var list = S.index.lessons.slice().sort(function (a, b) { return a.number - b.number; });
+    if (!list.length) h += '<p class="muted">No lesson yet.</p>';
+    list.forEach(function (l) {
+      if (l.module !== module) { if (module !== null) h += '</ul>'; module = l.module; h += '<div class="module-title">' + esc(module) + '</div><ul class="list">'; }
+      var st = lessonStatus(l.number);
+      h += '<li><span class="num">' + l.number + '</span><a href="#/lesson/' + l.number + '">' + esc(l.title) + '<br><span class="muted" style="font-size:13px">' + esc(l.date) + ' · ≈ ' + l.minutes + ' min</span></a>' +
+        '<span class="badge ' + (st === 'written' ? 'ok">written' : 'todo">to write') + '</span></li>';
+    });
+    if (list.length) h += '</ul>';
+    var c = {};
+    list.forEach(function (l) { l.concepts.forEach(function (x) { c[x] = l.number; }); });
+    var keys = Object.keys(c).sort();
+    if (keys.length) h += '<h2>Concepts learned (' + keys.length + ')</h2><p class="muted">' + keys.map(function (k) { return '<a href="#/lesson/' + c[k] + '">' + esc(k) + '</a>'; }).join(' · ') + '</p>';
+    app.innerHTML = h;
+  }
+
+  function renderAsk(query) {
+    setNav('ask');
+    var lesson = (/lesson=(\d+)/.exec(query || '') || [])[1];
+    var reqs = (S.progress.requests || []).slice().reverse();
+    var answered = {};
+    S.index.lessons.forEach(function (l) { (l.request_ids || []).forEach(function (id) { answered[id] = l.number; }); });
+    var h = '<h1>Ask the teacher</h1><p>Something unclear, or a topic you want to learn? Write it here. The teacher reads it and makes it the subject of an upcoming lesson (usually the next one, at most 3 lessons later).</p>';
+    h += '<div class="card"><textarea id="askText" maxlength="600" placeholder="e.g. Why did the Revolution start in 1789 and not earlier? Or: can we see more about Eleanor of Aquitaine?"></textarea>';
+    h += '<div class="row"><button class="primary" id="askSend">Send to the teacher</button>' + (lesson ? '<span class="muted">about lesson ' + esc(lesson) + '</span>' : '') + '</div></div>';
+    h += '<h2>Your questions</h2>';
+    if (!reqs.length) h += '<p class="muted">No question yet.</p>';
+    else h += '<ul class="list">' + reqs.map(function (r) {
+      return '<li><span class="num">' + esc((r.at || '').slice(5, 10)) + '</span><span style="flex:1">' + esc(r.text) + '</span>' + (answered[r.id] ? '<a class="badge ok" href="#/lesson/' + answered[r.id] + '">lesson ' + answered[r.id] + '</a>' : '<span class="badge todo">sent</span>') + '</li>';
+    }).join('') + '</ul>';
+    app.innerHTML = h;
+    document.getElementById('askSend').addEventListener('click', function () {
+      var t = document.getElementById('askText').value.trim();
+      if (t.length < 3) { toast('Write your question first.'); return; }
+      this.disabled = true;
+      var btn = this;
+      post('askQuestion', t, lesson ? parseInt(lesson, 10) : null)
+        .then(function () { toast('Sent! It will shape an upcoming lesson.'); renderAsk(query); })
+        .catch(function () { btn.disabled = false; });
+    });
+  }
+
+  function renderSettings() {
+    setNav('settings');
+    var h = '<h1>Settings</h1><div class="card"><p><strong>Theme</strong></p><div class="row">' +
+      ['auto', 'light', 'dark'].map(function (t) { return '<button class="chip' + ((getLocal('moa_theme') || 'auto') === t ? ' on' : '') + '" data-theme-set="' + t + '">' + t + '</button>'; }).join('') + '</div></div>';
+    h += '<p class="muted">Your progress, feedback and questions are saved in the Google Sheet "Suivi French History Academy". The teacher reads it every morning.</p>';
+    app.innerHTML = h;
+    app.querySelectorAll('[data-theme-set]').forEach(function (b) {
+      b.addEventListener('click', function () { setLocal('moa_theme', b.getAttribute('data-theme-set')); applyTheme(); renderSettings(); });
+    });
+  }
+
+  function applyTheme() {
+    var t = getLocal('moa_theme');
+    if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+    else document.documentElement.removeAttribute('data-theme');
+  }
+
+  var current = '/';
+  function go(hash) { current = hash.replace(/^#/, '') || '/'; route(); }
+  function route() {
+    var parts = current.split('?'), path = parts[0], query = parts[1] || '';
+    var m = /^\/lesson\/(\d+)$/.exec(path);
+    var p;
+    if (m) p = renderLesson(parseInt(m[1], 10));
+    else if (path === '/archive') p = Promise.resolve(renderArchive());
+    else if (path === '/ask') p = Promise.resolve(renderAsk(query));
+    else if (path === '/settings') p = Promise.resolve(renderSettings());
+    else if (S.index.latest) p = renderLesson(S.index.latest);
+    else { app.innerHTML = '<p>The first lesson is on its way: it appears here after the teacher\'s next morning run.</p>'; p = Promise.resolve(); }
+    p.catch(function (e) { app.innerHTML = '<p>Could not load: ' + esc(e.message) + '</p>'; });
+  }
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[href^="#/"]');
+    if (a) { e.preventDefault(); go(a.getAttribute('href')); }
+  });
+
+  applyTheme();
+  call('getData').then(function (d) { setData(d); route(); })
+    .catch(function (e) { app.innerHTML = '<p>Could not load the course: ' + esc(e && e.message || e) + '</p>'; });
+})();
+</script>
+</body>
+</html>

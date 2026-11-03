@@ -1,0 +1,46 @@
+{
+  "number": 1,
+  "date": "2026-11-03",
+  "module": "P0 · The frame",
+  "title": "The map of time: the main periods of French history",
+  "minutes": 13,
+  "story": "Imagine a very long road: more than 2,000 years if we start with the Gauls, much more if we start with the first humans. On the side of the road, there are signposts: *Gaul*, *Middle Ages*, *Ancien Régime*, *Revolution*, *Republic*. Before we walk on this road, step by step, we put the signposts in place. Every future lesson will hang on this map.",
+  "objective": "I can name the six main periods of French history in order, with their limits, and count centuries correctly.",
+  "write": [
+    {
+      "heading": "1. Six periods",
+      "body": "| Period | Dates | Key images |\n|---|---|---|\n| **Prehistory and Antiquity** (Gaul, Roman Gaul) | to **476** | Lascaux, Vercingetorix, Roman roads |\n| **Middle Ages** | **476 – 1492** | Clovis, Charlemagne, cathedrals, Joan of Arc |\n| **Early modern period** | **1492 – 1789** | Francis I, Louis XIV, Versailles |\n| **Revolution and 19th century** | **1789 – 1914** | Bastille, Napoleon, the Republic |\n| **World wars** | **1914 – 1945** | Verdun, de Gaulle |\n| **Today's France** | **1945 – today** | Fifth Republic, Europe |"
+    },
+    {
+      "heading": "2. Why these dates?",
+      "body": "They are **conventions**, chosen by historians. **476**: the end of the Western Roman Empire. **1492**: Columbus reaches America. **1789**: the French Revolution. The French call 1492–1789 *l'époque moderne* and the time after 1789 *l'époque contemporaine*. Note: the **Ancien Régime** (\"old regime\") is the name of French society before 1789."
+    },
+    {
+      "heading": "3. Counting centuries",
+      "body": "- **BC** (before Christ) = *av. J.-C.*; **AD** = after the birth of Christ.\n- The **18th century** = the years **1701–1800**, also called \"the 1700s\".\n- Rule: take the first two digits and **add 1** (1789 → 17 + 1 = 18th century)."
+    },
+    {
+      "heading": "4. Draw",
+      "body": "A long horizontal line with six boxes, one per period, and the dates 476, 1492, 1789, 1914, 1945 under the line."
+    }
+  ],
+  "check": [
+    {
+      "q": "Give the six periods in order, with their dates.",
+      "a": "Prehistory and Antiquity (to 476), Middle Ages (476–1492), early modern period (1492–1789), Revolution and 19th century (1789–1914), world wars (1914–1945), today's France (1945–today)."
+    },
+    {
+      "q": "In which century is 1515? And 1945?",
+      "a": "1515 is in the 16th century (15 + 1). 1945 is in the 20th century (19 + 1)."
+    },
+    {
+      "q": "What does \"Ancien Régime\" mean, and when does it end?",
+      "a": "It is the name of French society and monarchy before the Revolution; it ends in 1789."
+    }
+  ],
+  "read_more": "Historians do not all cut time in the same way. Some English books end the Middle Ages in **1453** (end of the Hundred Years' War and fall of Constantinople) instead of 1492, and the word \"France\" itself only slowly replaces \"kingdom of the Franks\" in the Middle Ages. The six periods are a **tool**, not a truth: they help you put each event in the right box.\n\n**Tip for your workbook**: write \"L1 · date · title\" at the top of each page, and keep the first page of the workbook for this timeline. You will add key dates to it as the course goes on.",
+  "next": "Next lesson: we go back about 450,000 years, to the first humans who lived on the land that will become France.",
+  "concepts": ["periods of history", "prehistory", "antiquity", "middle ages", "early modern period", "ancien régime", "counting centuries", "bc and ad"],
+  "review": false,
+  "request_ids": []
+}
