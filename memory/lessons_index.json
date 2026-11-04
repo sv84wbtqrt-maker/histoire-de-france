@@ -20,7 +20,49 @@
    "request_ids": [],
    "links": [],
    "words": 224
+  },
+  {
+   "number": 2,
+   "date": "2026-11-04",
+   "module": "P1 · Before France",
+   "title": "The first humans: Tautavel, Chauvet and Lascaux",
+   "minutes": 10,
+   "review": false,
+   "concepts": [
+    "prehistory",
+    "tautavel man c. 450,000 years ago",
+    "neanderthals",
+    "homo sapiens",
+    "chauvet cave",
+    "lascaux cave 1940"
+   ],
+   "request_ids": [],
+   "links": [
+    1
+   ],
+   "words": 196
+  },
+  {
+   "number": 3,
+   "date": "2026-11-04",
+   "module": "P1 · Before France",
+   "title": "Farmers and stone-raisers: the Neolithic and Carnac",
+   "minutes": 9,
+   "review": false,
+   "concepts": [
+    "neolithic",
+    "farming and herding",
+    "carnac megaliths",
+    "menhir",
+    "dolmen"
+   ],
+   "request_ids": [],
+   "links": [
+    2,
+    1
+   ],
+   "words": 192
   }
  ],
- "latest": 1
+ "latest": 3
 }

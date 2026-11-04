@@ -1,0 +1,59 @@
+{
+  "number": 2,
+  "date": "2026-11-04",
+  "module": "P1 · Before France",
+  "title": "The first humans: Tautavel, Chauvet and Lascaux",
+  "minutes": 10,
+  "story": "Imagine a cave in the Pyrenees foothills, around 450,000 years ago. A small group of hunters gathers round a fire. They have stone tools, no writing and no name for the land. We call that land \"France\" only today: it is where our long road really starts, long before the signposts of L1.",
+  "objective": "I can name three key sites of prehistory in France and say what each one teaches us.",
+  "write": [
+    {
+      "heading": "1. Prehistory",
+      "body": "**Prehistory** is the time before writing. In France it covers hundreds of thousands of years, so it is much longer than all the periods of L1 together (→ L1). We know it only from bones, tools and paintings."
+    },
+    {
+      "heading": "2. Three key sites",
+      "body": "| Site | Date | What it shows |\n|---|---|---|\n| **Tautavel** (Pyrenees) | around **450,000 years ago** | one of the oldest humans of Europe; hunters with fire and stone tools |\n| **Chauvet** (Ardèche) | around **36,000 years ago** | among the oldest cave paintings in the world |\n| **Lascaux** (Dordogne) | around **17,000 years ago** | huge painted bulls and horses; found in **1940** |"
+    },
+    {
+      "heading": "3. Two kinds of humans",
+      "body": "**Neanderthals** lived in Europe for a long time. **Homo sapiens**, our own species, arrived around **45,000 years ago**. The two met, and then the Neanderthals disappeared, around 40,000 years ago. Historians still debate why."
+    },
+    {
+      "heading": "4. Draw",
+      "body": "A map of France with three dots: Tautavel, Chauvet and Lascaux, and a horse or a bull from Lascaux."
+    }
+  ],
+  "check": [
+    {
+      "q": "What is prehistory?",
+      "a": "The time before writing, known only from bones, tools and paintings."
+    },
+    {
+      "q": "Match each site with its date: Tautavel, Chauvet, Lascaux.",
+      "a": "Tautavel around 450,000 years ago; Chauvet around 36,000; Lascaux around 17,000 (found in 1940)."
+    },
+    {
+      "q": "Which human species are we, and when did it arrive in Europe?",
+      "a": "Homo sapiens, around 45,000 years ago."
+    }
+  ],
+  "read_more": "Lascaux was found on 12 September 1940 by four teenagers and a dog. The cave was closed to visitors in 1963 because breath was damaging the paintings. Today you can visit a full copy nearby. The Chauvet cave, found in 1994, is also closed; its copy is in the Ardèche. Chauvet is a UNESCO World Heritage site (2014).",
+  "next": "Next lesson: about 6,000 years ago, people stop hunting only and start farming. They also raise the stones of Carnac.",
+  "concepts": [
+    "prehistory",
+    "tautavel man c. 450,000 years ago",
+    "neanderthals",
+    "homo sapiens",
+    "chauvet cave",
+    "lascaux cave 1940"
+  ],
+  "review": false,
+  "request_ids": [],
+  "links": [
+    {
+      "lesson": 1,
+      "why": "Prehistory is the first period of the map of time."
+    }
+  ]
+}

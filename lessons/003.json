@@ -1,0 +1,62 @@
+{
+  "number": 3,
+  "date": "2026-11-04",
+  "module": "P1 · Before France",
+  "title": "Farmers and stone-raisers: the Neolithic and Carnac",
+  "minutes": 9,
+  "story": "Imagine a village in Brittany, around 4500 BC. The hunters of Lascaux are long gone. People now live in houses, keep sheep and cows, and grow wheat. Together they pull a huge stone upright and fix it in the earth. Nobody can write why. We can only wonder.",
+  "objective": "I can explain what changed in the Neolithic and say what the stones of Carnac are.",
+  "write": [
+    {
+      "heading": "1. A revolution",
+      "body": "After the hunters of L2 (→ L2), the **Neolithic** (\"new stone age\") begins in France (still prehistory, → L1) around **6000 BC**. People learn **farming** and **herding**, make pottery and settle in villages. The idea comes from the Middle East and spreads along the Mediterranean."
+    },
+    {
+      "heading": "2. Why it matters",
+      "body": "- Food can be stored, so the population grows.\n- People stay in one place: villages, then a sense of property and power.\n- Some people are free to build, make tools and trade."
+    },
+    {
+      "heading": "3. The stones of Carnac",
+      "body": "In Brittany, people raised more than **3,000 standing stones** in long lines, between about **4500 and 3300 BC**. A **menhir** is one standing stone. A **dolmen** is a stone table over a tomb. We do not know for sure why they were built: tombs, calendar or religion. Historians still debate it."
+    },
+    {
+      "heading": "4. Draw",
+      "body": "Rows of menhirs, and one dolmen (two stones with a flat stone on top)."
+    }
+  ],
+  "check": [
+    {
+      "q": "What two big changes mark the Neolithic?",
+      "a": "Farming and herding, which lead to settled villages."
+    },
+    {
+      "q": "What is the difference between a menhir and a dolmen?",
+      "a": "A menhir is a single standing stone; a dolmen is a stone table over a tomb."
+    },
+    {
+      "q": "Why did food storage change society?",
+      "a": "The population grew and people settled in villages."
+    }
+  ],
+  "read_more": "Many menhirs have local legends. In Brittany, people say the lines at Carnac are Roman soldiers turned into stone by a wizard. The real builders lived over 4,000 years before Rome. The Carnac region was added to the UNESCO World Heritage list in 2025.",
+  "next": "Next lesson: around 600 BC, Greek sailors found Marseille, and the Celts spread over the land.",
+  "concepts": [
+    "neolithic",
+    "farming and herding",
+    "carnac megaliths",
+    "menhir",
+    "dolmen"
+  ],
+  "review": false,
+  "request_ids": [],
+  "links": [
+    {
+      "lesson": 2,
+      "why": "Settled farmers replace the hunters of the caves."
+    },
+    {
+      "lesson": 1,
+      "why": "Neolithic is still prehistory, before the Antiquity box."
+    }
+  ]
+}

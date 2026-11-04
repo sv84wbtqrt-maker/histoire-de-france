@@ -18,3 +18,18 @@ day maximum. Sister course: Middle Office Academy (same learner, same tools).
 - Workbook: first page reserved for the timeline, to be completed with key dates.
 - Words to copy: see memory/lessons_index.json.
 - Learner feedback: none yet.
+
+## Lesson 2 · 2026-11-04 · The first humans: Tautavel, Chauvet and Lascaux
+- Period: P1 · Before France
+- Taught: prehistory, Tautavel (~450,000 years), Neanderthals vs Homo sapiens (~45,000), Chauvet (~36,000), Lascaux (~17,000, found 1940).
+- Links: L1 (prehistory is the first box of the map of time).
+- Planted for later: cave art as the first "culture"; Neolithic next.
+- Words to copy: 197. Learner feedback: none yet (progress sheet empty). Questions: none.
+
+## Lesson 3 · 2026-11-04 · Farmers and stone-raisers: the Neolithic and Carnac
+- Period: P1 · Before France
+- Taught: Neolithic from ~6000 BC, farming and herding, menhir/dolmen, Carnac (~4500-3300 BC, 3,000+ stones).
+- Links: L2 (hunters replaced by farmers), L1 (still prehistory).
+- Planted for later: Greeks at Marseille (~600 BC) and the Celts.
+- Words to copy: 177. Learner feedback: none yet. Questions: none.
+- Note: L2 and L3 prepared together as the reserve (nothing written yet by the learner).
