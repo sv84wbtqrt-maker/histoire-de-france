@@ -1,0 +1,63 @@
+{
+  "number": 4,
+  "date": "2026-11-10",
+  "module": "P1 · Before France",
+  "title": "Greek sailors and Celtic chiefs: Marseille and the Celts",
+  "minutes": 11,
+  "story": "Imagine a bay on the Mediterranean coast, around 600 BC. A Greek ship from Phocaea, in today's Turkey, drops anchor. Its captain meets a local chief, and the legend says that the chief's daughter chooses the stranger as her husband. A few miles inland, Celtic horsemen watch the sails with curiosity. Two worlds are about to meet.",
+  "objective": "I can say who founded Marseille and when, who the Celts were, and what each group brought.",
+  "write": [
+    {
+      "heading": "1. Marseille, the oldest city",
+      "body": "Around **600 BC**, Greeks from **Phocaea** found **Massalia** (today's **Marseille**), the oldest city in France. They come by sea to trade. Legend says the Greek Protis married Gyptis, daughter of a local chief. Like the farmers of Carnac, these settlers choose a coast with good land (→ L3)."
+    },
+    {
+      "heading": "2. What the Greeks bring",
+      "body": "- **Vines** and **olive trees**: wine and oil.\n- **Coins** and **writing** (the Greek alphabet).\n- A city with its own laws, trading all round the Mediterranean."
+    },
+    {
+      "heading": "3. The Celts",
+      "body": "The **Celts** are a group of peoples who share a language and customs. They spread over Europe from the **8th century BC**. They make iron tools and weapons, so we call the period the **Iron Age**. Their rich culture is called **La Tène** (from about **450 BC**). The Romans will call the Celts of our land the **Gauls** (→ L1)."
+    },
+    {
+      "heading": "4. A princess of Vix",
+      "body": "Around **500 BC**, a Celtic princess is buried at **Vix**, in Burgundy, with a bronze vase **1.64 m** tall, made in a Greek workshop. It proves that Greeks and Celts traded."
+    }
+  ],
+  "check": [
+    {
+      "q": "Who founded Massalia, and around when?",
+      "a": "Greek sailors from Phocaea, around 600 BC."
+    },
+    {
+      "q": "Name three things the Greeks brought to Gaul.",
+      "a": "Vines, olive trees, coins and writing (any three)."
+    },
+    {
+      "q": "What did the tomb of Vix prove?",
+      "a": "That Celts and Greeks traded: a Greek-made vase lay in a Celtic tomb."
+    }
+  ],
+  "read_more": "The Vix vase, found in 1953, is the largest known bronze vase of the ancient world. It is shown at the museum of Châtillon-sur-Seine. Marseille still celebrates its Greek birth: it is often called \"the Phocaean city\" (la cité phocéenne), and its football team is Olympique de Marseille.",
+  "next": "Next lesson: the Gauls at home: tribes, druids, villages and warriors.",
+  "concepts": [
+    "massalia marseille c. 600 bc",
+    "greek colonisation",
+    "celts",
+    "iron age",
+    "la tène culture",
+    "vix tomb c. 500 bc"
+  ],
+  "review": false,
+  "request_ids": [],
+  "links": [
+    {
+      "lesson": 3,
+      "why": "Settlers again choose good land, a continuation of the Neolithic story of farmers."
+    },
+    {
+      "lesson": 1,
+      "why": "The Celts are the Gauls of the Antiquity box on the map of time."
+    }
+  ]
+}

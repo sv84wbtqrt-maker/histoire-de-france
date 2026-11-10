@@ -62,7 +62,29 @@
     1
    ],
    "words": 192
+  },
+  {
+   "number": 4,
+   "date": "2026-11-10",
+   "module": "P1 · Before France",
+   "title": "Greek sailors and Celtic chiefs: Marseille and the Celts",
+   "minutes": 11,
+   "review": false,
+   "concepts": [
+    "massalia marseille c. 600 bc",
+    "greek colonisation",
+    "celts",
+    "iron age",
+    "la tène culture",
+    "vix tomb c. 500 bc"
+   ],
+   "request_ids": [],
+   "links": [
+    3,
+    1
+   ],
+   "words": 217
   }
  ],
- "latest": 3
+ "latest": 4
 }

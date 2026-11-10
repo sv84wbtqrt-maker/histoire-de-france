@@ -1,5 +1,14 @@
 {
- "lessons": {},
+ "lessons": {
+  "1": {
+   "status": "written",
+   "at": "2026-11-10",
+   "feedback": {
+    "difficulty": "too_easy",
+    "length": null
+   }
+  }
+ },
  "requests": [],
- "read_at": "2026-11-04T08:00:00Z"
+ "read_at": "2026-11-10T08:00:00Z"
 }

@@ -33,3 +33,10 @@ day maximum. Sister course: Middle Office Academy (same learner, same tools).
 - Planted for later: Greeks at Marseille (~600 BC) and the Celts.
 - Words to copy: 177. Learner feedback: none yet. Questions: none.
 - Note: L2 and L3 prepared together as the reserve (nothing written yet by the learner).
+
+## Lesson 4 · 2026-11-10 · Greek sailors and Celtic chiefs: Marseille and the Celts
+- Period: P1 · Before France
+- Taught: Massalia (~600 BC, Phocaeans), what Greeks brought, Celts, Iron Age, La Tène (~450 BC), Vix tomb (~500 BC).
+- Links: L3 (settlers on good land), L1 (Celts = Gauls of Antiquity).
+- Planted for later: Gauls, druids, tribes (L5); Romans allied with Marseille later.
+- Feedback seen: L1 written, too_easy → denser, more numbers. Questions: none. Reserve: W=1, so target L4 (L2, L3, L4 ready).
