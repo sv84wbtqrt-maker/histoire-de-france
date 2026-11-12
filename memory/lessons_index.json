@@ -84,7 +84,29 @@
     1
    ],
    "words": 217
+  },
+  {
+   "number": 5,
+   "date": "2026-11-12",
+   "module": "P1 · Before France",
+   "title": "The Gauls at home: tribes, druids and warriors",
+   "minutes": 13,
+   "review": false,
+   "concepts": [
+    "gauls",
+    "gallic tribes",
+    "druids",
+    "oppidum",
+    "bibracte",
+    "gallia narbonensis narbonne 118 bc"
+   ],
+   "request_ids": [],
+   "links": [
+    4,
+    3
+   ],
+   "words": 249
   }
  ],
- "latest": 4
+ "latest": 5
 }

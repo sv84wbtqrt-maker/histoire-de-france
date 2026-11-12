@@ -40,3 +40,12 @@ day maximum. Sister course: Middle Office Academy (same learner, same tools).
 - Links: L3 (settlers on good land), L1 (Celts = Gauls of Antiquity).
 - Planted for later: Gauls, druids, tribes (L5); Romans allied with Marseille later.
 - Feedback seen: L1 written, too_easy → denser, more numbers. Questions: none. Reserve: W=1, so target L4 (L2, L3, L4 ready).
+
+## Lesson 5 · 2026-11-12 · The Gauls at home: tribes, druids and warriors
+- Period: P1 · Before France
+- Taught: Gaul = about 60 peoples (Parisii, Arverni, Aedui), population 6-10 million (debated), druids / nobles / people, oppida (Bibracte), barrel, Marseille calls Rome, Narbonne 118 BC and the "Province" (Provence), Caesar's "three parts" (Belgians, Celts, Aquitanians).
+- Links: L4 (Celts = Gauls; Marseille's ally Rome), L3 (farms and villages since the Neolithic).
+- Threads: Paris and the regions (Parisii → Paris); France and the world (Rome enters by the south).
+- Planted for later: Arverni (Vercingetorix's people) and Aedui (Rome's allies) for L6; Bibracte (Vercingetorix chosen there); "nos ancêtres les Gaulois" for the 19th-century Republic lessons.
+- Words to copy: 249. Feedback seen: L1 too_easy (kept denser, more numbers); L2 written 2026-11-12, no feedback. Questions: none.
+- Reserve: W=2, target L5 (L3, L4, L5 ready).

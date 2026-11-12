@@ -1,0 +1,63 @@
+{
+  "number": 5,
+  "date": "2026-11-12",
+  "module": "P1 · Before France",
+  "title": "The Gauls at home: tribes, druids and warriors",
+  "minutes": 13,
+  "story": "Imagine a forest in the land of the Carnutes, near today's Chartres, around 125 BC. Each year, druids come here from all over Gaul to meet and judge quarrels. Around them, the land is full of farms, fortified hill towns and proud tribes who often fight each other. Far to the south, the Greeks of Marseille are worried: Gallic tribes threaten their city, and they call a powerful friend for help: Rome.",
+  "objective": "I can describe the society of the Gauls, name their three main groups and explain how Rome first entered Gaul.",
+  "write": [
+    {
+      "heading": "1. A land of tribes",
+      "body": "The Celts of our land are the **Gauls** (→ L4). **Gaul** is not one country: it has about **60 peoples** (tribes), each with its own chiefs, coins and capital. For example, the **Parisii** live on the Seine (they gave their name to **Paris**), the **Arverni** in Auvergne and the **Aedui** in Burgundy. Population: maybe **6 to 10 million**; estimates vary."
+    },
+    {
+      "heading": "2. Three groups in society",
+      "body": "| Group | Role |\n|---|---|\n| **Druids** | priests, judges and teachers; up to **20 years** of training, all by heart (no writing) |\n| **Nobles** (warriors) | rich horsemen with many followers |\n| **The people** | farmers and craftsmen, the large majority |"
+    },
+    {
+      "heading": "3. Farmers and craftsmen",
+      "body": "Most Gauls live in farms and villages, as since the Neolithic (→ L3). Their **oppida** (fortified hill towns), like **Bibracte**, hold markets and workshops. Gauls are skilled with iron, and they are often credited with the wooden **barrel**."
+    },
+    {
+      "heading": "4. Rome steps in",
+      "body": "Marseille is attacked by Gallic tribes and calls its ally **Rome**. Rome conquers the south: **Narbonne** is founded in **118 BC**. This Roman \"Province\" gives its name to **Provence**. Julius Caesar wrote: \"All Gaul is divided into three parts\": **Belgians** (north), **Celts** (centre) and **Aquitanians** (south-west)."
+    }
+  ],
+  "check": [
+    {
+      "q": "Why can't we call Gaul a country?",
+      "a": "It was divided into about 60 independent peoples (tribes), each with its own chiefs, coins and capital, which often fought each other."
+    },
+    {
+      "q": "What were the three roles of the druids, and why do we know little about their knowledge?",
+      "a": "They were priests, judges and teachers. Their knowledge was learnt by heart and never written down."
+    },
+    {
+      "q": "How did Rome first enter Gaul, and what name remains from it?",
+      "a": "Marseille called Rome for help against Gallic tribes; Rome conquered the south (Narbonne, 118 BC). The Roman \"Province\" gave its name to Provence."
+    }
+  ],
+  "read_more": "Most of what we know about the Gauls comes from their enemies, the Greeks and the Romans, especially Caesar's book *The Gallic War*, written to make himself look good. Archaeology now corrects that picture: the oppidum of Bibracte (Mont Beuvray, Burgundy) has a fine museum. The famous school sentence \"our ancestors the Gauls\" (nos ancêtres les Gaulois) was popular in the 19th century, when the Republic wanted a common origin for all the French. Asterix (1959) plays with the same image.",
+  "next": "Next lesson: in 58 BC, Julius Caesar comes to Gaul. Vercingetorix leads the resistance: Gergovia, then Alesia (52 BC).",
+  "concepts": [
+    "gauls",
+    "gallic tribes",
+    "druids",
+    "oppidum",
+    "bibracte",
+    "gallia narbonensis narbonne 118 bc"
+  ],
+  "review": false,
+  "request_ids": [],
+  "links": [
+    {
+      "lesson": 4,
+      "why": "The Celts of L4 are the Gauls; Marseille's alliance with Rome brings the Romans into Gaul."
+    },
+    {
+      "lesson": 3,
+      "why": "Gaulish farms and villages continue the settled life that began in the Neolithic."
+    }
+  ]
+}
